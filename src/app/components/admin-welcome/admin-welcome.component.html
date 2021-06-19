@@ -1,0 +1,21 @@
+<div class="container" style="margin-top: 7vw;">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 align-self-center text-center">
+            <h1 class="title-color">Bienvenido a la pantalla de administrador de VEDRU-DIET</h1>
+            <ul class="list-group list-group-flush" style="margin-top: 1vw;">
+                <li class="list-group-item">
+                    <h4 class="text-info text-color">Haz click en el siguiente boton para acceder al creador de alimentos</h4>
+                    <button [routerLink]="['/adminFood']" style="margin-bottom: 3vw;" type="submit" class="btn btn-primary btn-send">Creador de Alimentos</button>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="text-info text-color">Haz click en en el siguiente boton para acceder al creador de recetas</h4>
+                    <button [routerLink]="['/adminRecipe']" style="margin-bottom: 3vw;" type="submit" class="btn btn-primary btn-send">Creador de Recetas</button>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="text-info text-color">Haz click en en el siguiente boton para acceder al creador de menus</h4>
+                    <button [routerLink]="['/adminMenu']" style="margin-bottom: 3vw;" type="submit" class="btn btn-primary btn-send">Creador de Menus</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

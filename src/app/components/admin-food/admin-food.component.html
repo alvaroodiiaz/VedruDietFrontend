@@ -1,0 +1,92 @@
+<form name="adminFood" id="adminFood" method="post" action="">
+  <div class="container" style="margin-top: 1vw;">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 align-self-center text-center">
+        <h1 class="title-color">Inserccion de alimentos a BBDD</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 4vw;">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 align-self-center text-center">
+        <h3 class="title-color">Datos del alimento</h3>
+        <div style="margin-top: 2vw;">
+          <div style="margin-bottom: 30px;">
+            <div class="mb-3">
+              <label for="username" class="form-label text-color">Nombre</label>
+              <input id="name" type="text" class="form-control" aria-describedby="emailHelp"
+                placeholder="Nombre del alimento" [(ngModel)]="name" name="name">
+            </div>
+            <div class="mb-3">
+              <label for="usersurname" class="form-label text-color">Calorias</label>
+              <input name="calorias" id="calorias" type="text" class="form-control" placeholder="Calorias del alimento"
+                [(ngModel)]="calorias">
+            </div>
+          </div>
+          <div class="mb-3 row" style="margin-right: -66px;">
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Lipidos</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Hidratos</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Proteinas</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Fibra</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Sodio</label>
+            <input id="lipidos" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Lipidos" [(ngModel)]="lipidos" matTooltip="Lipidos"
+              name="lipidos">
+            <input id="hidratos" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Hidratos" [(ngModel)]="hidratos"
+              matTooltip="Hidratos de Carbono" name="hidratos">
+            <input id="proteinas" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Proteinas" [(ngModel)]="proteinas" matTooltip="Proteinas"
+              name="proteinas">
+            <input id="fibra" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Fibra" [(ngModel)]="fibra" matTooltip="Fibra" name="fibra">
+            <input id="sodio" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Sodio" [(ngModel)]="sodio" matTooltip="Sodio" name="sodio">
+          </div>
+          <div class="mb-3 row" style="margin-right: -66px;">
+            <label for="name" class="form-label text-color" style="width: 20% !important;">AGPS</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">AGS</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">AMS</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Calcio</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Fosforo</label>
+            <input id="agps" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="AGPS" [(ngModel)]="agps" matTooltip="AGPS" name="agps">
+            <input id="ags" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="AGS" [(ngModel)]="ags" matTooltip="AGS" name="ags">
+            <input id="ams" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="AMS" [(ngModel)]="ams" matTooltip="AMS" name="ams">
+            <input id="calcio" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Calcio" [(ngModel)]="calcio" matTooltip="Calcio" name="calcio">
+            <input id="fosforo" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Fosforo" [(ngModel)]="fosforo" matTooltip="Fosforo"
+              name="fosforo">
+          </div>
+          <div class="mb-3 row" style="margin-right: -66px;">
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Fenilalanina</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Potasio</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Hierro</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Tirosina</label>
+            <label for="name" class="form-label text-color" style="width: 20% !important;">Fructosa</label>
+            <input id="fenilalanina" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Fenilalanina" [(ngModel)]="fenilalanina"
+              matTooltip="Fenilalanina" name="fenilalanina">
+            <input id="potasio" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Potasio" [(ngModel)]="potasio" matTooltip="Potasio"
+              name="potasio">
+            <input id="hierro" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Hierro" [(ngModel)]="hierro" matTooltip="Hierro" name="hierro">
+            <input id="tirosina" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Tirosina" [(ngModel)]="tirosina" matTooltip="Tirosina"
+              name="tirosina">
+            <input id="fructusa" type="text" class="form-control input-nutrientes" style="width: 20% !important;"
+              aria-describedby="emailHelp" placeholder="Fructusa" [(ngModel)]="fructosa" matTooltip="Fructosa"
+              name="fructosa">
+          </div>
+          <button style="margin-bottom: 3vw;" (click)="createFood()" (click)="openSnackBar()" type="submit"
+            class="btn btn-primary btn-send">Crear Alimento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

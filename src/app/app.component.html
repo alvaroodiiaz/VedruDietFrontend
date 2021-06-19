@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand cabecera" [routerLink]="['']">VEDRU-DIET</a>
+
+  <div class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link cabecera" [routerLink]="['/food']">Alimentos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link cabecera" [routerLink]="['/recipe']">Recetas <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link cabecera" [routerLink]="['/menu']">Menú <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <button *ngIf="session" (click)="openDialog()" (click)="varSession()" class="btn btn-primary btn-login" type="button">Iniciar Sesión</button>
+        <button *ngIf="!session" [routerLink]="['']" (click)="varSession()" class="btn btn-primary btn-login" type="button">Cerrar Sesión</button>
+      </li>
+    </ul>
+  </div>  
+</nav>
+<router-outlet></router-outlet>

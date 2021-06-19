@@ -1,0 +1,171 @@
+<div class="container" style="margin-top: 1vw;">
+  <div class="row justify-content-center">
+    <div class="col-sm-8 align-self-center text-center">
+      <h1 class="title-color">Menú Diario</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-6 align-self-center text-center">
+      <h3 class="title-color">Busqueda de menú por paciente</h3>
+
+      <div class="mb-3">
+        <label for="username" class="form-label text-color">Nombre</label>
+        <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+          placeholder="Nombre del paciente" [(ngModel)]="name" name="name" ngDefaultControl>
+      </div>
+      <button style="margin-bottom: 3vw;" type="submit" class="btn btn-primary btn-find"
+        (click)="buscar()">Buscar</button>
+    </div>
+
+    <div class="mb-3 row" style="margin-right: -66px;">
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Desayuno Lunes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Desayuno Martes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Desayuno
+        Miercoles</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Desayuno Jueves</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Desayuno Viernes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Desayuno Sabado</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Desayuno Domingo</label>
+      <input id="DesayunoL" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Desayuno" [(ngModel)]="DesayunoL" matTooltip="Lunes" name="DesayunoL">
+      <input id="DesayunoM" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Desayuno" [(ngModel)]="DesayunoM" matTooltip="Martes"
+        name="DesayunoM">
+      <input id="DesayunoX" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Desayuno" [(ngModel)]="DesayunoX" matTooltip="Miercoles"
+        name="DesayunoX">
+      <input id="DesayunoJ" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Desayuno" [(ngModel)]="DesayunoJ" matTooltip="Jueves"
+        name="DesayunoJ">
+      <input id="DesayunoV" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Desayuno" [(ngModel)]="DesayunoV" matTooltip="Viernes"
+        name="DesayunoV">
+      <input id="DesayunoS" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Desayuno" [(ngModel)]="DesayunoS" matTooltip="Sabado"
+        name="DesayunoS">
+      <input id="DesayunoD" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Desayuno" [(ngModel)]="DesayunoD" matTooltip="Domingo"
+        name="DesayunoD">
+    </div>
+
+    <div class="mb-3 row" style="margin-right: -66px;">
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Media Mañana
+        Lunes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Media Mañana
+        Martes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Media Mañana
+        Miercoles</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Media Mañana
+        Jueves</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Media Mañana
+        Viernes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Media Mañana
+        Sabado</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Media Mañana
+        Domingo</label>
+      <input id="MediaL" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Media Mañana" [(ngModel)]="MediaL" matTooltip="Lunes" name="MediaL">
+      <input id="MediaM" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Media Mañana" [(ngModel)]="MediaM" matTooltip="Martes" name="MediaM">
+      <input id="MediaX" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Media Mañana" [(ngModel)]="MediaX" matTooltip="Miercoles"
+        name="MediaX">
+      <input id="MediaJ" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Media Mañana" [(ngModel)]="MediaJ" matTooltip="Jueves" name="MediaJ">
+      <input id="MediaV" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Media Mañana" [(ngModel)]="MediaV" matTooltip="Viernes" name="MediaV">
+      <input id="MediaS" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Media Mañana" [(ngModel)]="MediaS" matTooltip="Sabado" name="MediaS">
+      <input id="MediaD" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Media Mañana" [(ngModel)]="MediaD" matTooltip="Domingo" name="MediaD">
+    </div>
+
+    <div class="mb-3 row" style="margin-right: -66px;">
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Almuerzo Lunes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Almuerzo Martes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Almuerzo
+        Miercoles</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Almuerzo Jueves</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Almuerzo Viernes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Almuerzo Sabado</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Almuerzo Domingo</label>
+      <input id="AlmuerzoL" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Almuerzo" [(ngModel)]="AlmuerzoL" matTooltip="Lunes" name="AlmuerzoL">
+      <input id="AlmuerzoM" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Almuerzo" [(ngModel)]="AlmuerzoM" matTooltip="Martes"
+        name="AlmuerzoM">
+      <input id="AlmuerzoX" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Almuerzo" [(ngModel)]="AlmuerzoX" matTooltip="Miercoles"
+        name="AlmuerzoX">
+      <input id="AlmuerzoJ" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Almuerzo" [(ngModel)]="AlmuerzoJ" matTooltip="Jueves"
+        name="AlmuerzoJ">
+      <input id="AlmuerzoV" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Almuerzo" [(ngModel)]="AlmuerzoV" matTooltip="Viernes"
+        name="AlmuerzoV">
+      <input id="AlmuerzoS" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Almuerzo" [(ngModel)]="AlmuerzoS" matTooltip="Sabado"
+        name="AlmuerzoS">
+      <input id="AlmuerzoD" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Almuerzo" [(ngModel)]="AlmuerzoD" matTooltip="Domingo"
+        name="AlmuerzoD">
+    </div>
+
+    <div class="mb-3 row" style="margin-right: -66px;">
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Merienda Lunes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Merienda Martes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Merienda
+        Miercoles</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Merienda Jueves</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Merienda Viernes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Merienda Sabado</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Merienda Domingo</label>
+      <input id="MeriendaL" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Merienda" [(ngModel)]="MeriendaL" matTooltip="Lunes" name="MeriendaL">
+      <input id="MeriendaM" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Merienda" [(ngModel)]="MeriendaM" matTooltip="Martes"
+        name="MeriendaM">
+      <input id="MeriendaX" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Merienda" [(ngModel)]="MeriendaX" matTooltip="Miercoles"
+        name="MeriendaX">
+      <input id="MeriendaJ" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Merienda" [(ngModel)]="MeriendaJ" matTooltip="Jueves"
+        name="MeriendaJ">
+      <input id="MeriendaV" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Merienda" [(ngModel)]="MeriendaV" matTooltip="Viernes"
+        name="MeriendaV">
+      <input id="MeriendaS" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Merienda" [(ngModel)]="MeriendaS" matTooltip="Sabado"
+        name="MeriendaS">
+      <input id="MeriendaD" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Merienda" [(ngModel)]="MeriendaD" matTooltip="Domingo"
+        name="MeriendaD">
+    </div>
+
+    <div class="mb-3 row" style="margin-right: -66px;">
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Cena Lunes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Cena Martes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Cena Miercoles</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Cena Jueves</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Cena Viernes</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Cena Sabado</label>
+      <label for="name" class="form-label text-color" style="width: 14.28% !important;">Cena Domingo</label>
+      <input id="CenaL" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Cena" [(ngModel)]="CenaL" matTooltip="Lunes" name="CenaL">
+      <input id="CenaM" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Cena" [(ngModel)]="CenaM" matTooltip="Martes" name="CenaM">
+      <input id="CenaX" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Cena" [(ngModel)]="CenaX" matTooltip="Miercoles" name="CenaX">
+      <input id="CenaJ" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Cena" [(ngModel)]="CenaJ" matTooltip="Jueves" name="CenaJ">
+      <input id="CenaV" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Cena" [(ngModel)]="CenaV" matTooltip="Viernes" name="CenaV">
+      <input id="CenaS" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Cena" [(ngModel)]="CenaS" matTooltip="Sabado" name="CenaS">
+      <input id="CenaD" type="text" class="form-control input-nutrientes" style="width: 14.28% !important;"
+        aria-describedby="emailHelp" placeholder="Cena" [(ngModel)]="CenaD" matTooltip="Domingo" name="CenaD">
+    </div>
+  </div>
+</div>

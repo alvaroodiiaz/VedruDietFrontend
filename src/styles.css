@@ -1,0 +1,119 @@
+:root {
+  --title: #FFD468;
+  --text: #ffb600 ;
+}
+
+/** Inicio estilos cabecera */
+.cabecera {
+  color: var(--text) !important;
+}
+
+.cabecera:hover {
+  color: var(--title) !important;
+}
+
+/** Fin estilos cabecera */
+
+/** Inicio estilos boton Inicio de Sesion */
+.btn-login {
+  background-color: var(--text);
+  border-color: var(--text);
+}
+
+.btn-login:hover {
+  background-color: var(--title);
+  border-color: var(--title);
+}
+
+.btn-login:active {
+  background-color: var(--title) !important;
+  border-color: var(--title) !important;
+}
+
+.btn-login:focus {
+  background-color: var(--title);
+  border-color: var(--title);
+  box-shadow: 0 0 0 0.2rem rgb(255 212 104) !important
+}
+
+/** Fin estilos boton Inicio de Sesion */
+
+/** Inicio estilos boton Buscar */
+.btn-find {
+  background-color: var(--text);
+  border-color: var(--text);
+}
+
+.btn-find:hover {
+  background-color: var(--title);
+  border-color: var(--title);
+}
+
+.btn-find:active {
+  background-color: var(--title) !important;
+  border-color: var(--title) !important;
+}
+
+.btn-find:focus {
+  background-color: var(--title);
+  border-color: var(--title);
+  box-shadow: 0 0 0 0.2rem rgb(255 212 104) !important
+}
+
+/** Inicio estilos boton Buscar */
+
+/** Inicio estilos boton Enviar */
+.btn-send {
+  background-color: var(--text);
+  border-color: var(--text);
+}
+
+.btn-send:hover {
+  background-color: var(--title);
+  border-color: var(--title);
+}
+
+.btn-send:active {
+  background-color: var(--title) !important;
+  border-color: var(--title) !important;
+}
+
+.btn-send:focus {
+  background-color: var(--title);
+  border-color: var(--title);
+  box-shadow: 0 0 0 0.2rem rgb(255 212 104) !important
+}
+
+/** Inicio estilos boton Enviar */
+
+/** Inicio estilo textos */
+.title-color {
+  color: var(--title) !important;
+}
+
+.login-color {
+  color: white !important;
+}
+
+.text-color {
+  color: var(--text) !important;
+}
+
+/** Fin estilo textos */
+
+.input-nutrientes {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+  background-image: url("../src/assets/photos/wallpaper1.png");
+  background-size: 1400px 930px;
+}
+
+.mat-dialog-container{
+  background-image: url('https://media.istockphoto.com/photos/abstract-background-material-design-wallpaper-orange-and-green-autumn-picture-id1027951196?k=6&m=1027951196&s=170667a&w=0&h=J1tWWYzGy89LCKQp0rTQx0udrGudoe3GyC7dRsUlc5I='); background-size: 150%;
+}

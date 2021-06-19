@@ -1,0 +1,33 @@
+    <div class="container" style="margin-top: 1vw;">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 align-self-center text-center">
+          <h1 class="title-color">Información de alimentos</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 4vw;">
+      <div class="row justify-content-center">
+        <div class="col-sm-6 align-self-center text-center">
+          <h3 class="title-color">Búsqueda de Alimentos</h3>
+          <div style="margin-top: 2vw;">
+            <div class="mb-3">
+              <label for="name" class="form-label text-color">Nombre</label>
+              <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                placeholder="Nombre del alimento" [(ngModel)]="name" required>
+            </div>
+            <button style="margin-bottom: 3vw;" (click)="buscar()" type="submit"
+              class="btn btn-primary btn-find">Buscar</button>
+            <div class="mb-3">
+              <label for="calorias" class="form-label text-color">Calorias</label>
+              <input type="text" class="form-control" id="userage" aria-describedby="emailHelp"
+                placeholder="Calorias del alimento" readonly [(ngModel)]="calorias">
+            </div>
+            <div class="mb-3">
+              <button (click)="openDialog1()" style="margin-bottom: 3vw;" type="submit"
+                class="btn btn-primary btn-find">Otras caracteristicas</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

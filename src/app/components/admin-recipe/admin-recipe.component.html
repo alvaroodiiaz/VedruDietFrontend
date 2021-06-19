@@ -1,0 +1,40 @@
+<div class="container" style="margin-top: 1vw;">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 align-self-center text-center">
+            <h1 class="title-color">Inserccion de recetas a BBDD</h1>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 4vw;">
+    <div class="row justify-content-center">
+        <div class="col-sm-6 align-self-center text-center">
+            <h3 class="title-color">Datos de la receta</h3>
+            <div style="margin-top: 2vw;">
+                <div class="mb-3">
+                    <label for="username" class="form-label text-color">Nombre</label>
+                    <input type="text" class="form-control" id="recipeName" [(ngModel)]="recipeName" aria-describedby="emailHelp"
+                        placeholder="Nombre de la receta" name="recipeName">
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label text-color">Preparacion</label>
+                    <input type="text" class="form-control" id="recipePreparation" [(ngModel)]="recipePreparation" aria-describedby="emailHelp"
+                        placeholder="Preparacion de la receta" name="recipePreparation">
+                </div>
+                <div class="mb-3">
+                    <label for="userage" class="form-label text-color">Tiempo necesario</label>
+                    <input type="text" class="form-control" id="recipeTime" [(ngModel)]="recipeTime" aria-describedby="emailHelp"
+                        placeholder="Tiempo para realizar la receta" name="recipeTime">
+                </div>
+                <div class="mb-3">
+                    <label for="userage" class="form-label text-color">Alimentos necesarios</label>
+                    <select class="form-select" multiple [(ngModel)]="selectedFoods" aria-label="Default select example">
+                        <option *ngFor="let item of ingredientes | async" [value]="item.id">{{item.foodName}}</option>
+                        
+                      </select>
+                </div>
+
+                <button style="margin-bottom: 3vw;" type="submit" class="btn btn-primary btn-send" (click)="createRecipe()" (click)="openSnackBar()">Crear Receta</button>
+            </div>
+        </div>
+    </div>
+</div>

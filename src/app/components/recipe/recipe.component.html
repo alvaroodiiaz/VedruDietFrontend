@@ -1,0 +1,38 @@
+<div class="container" style="margin-top: 1vw;">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 align-self-center text-center">
+            <h1 class="title-color">Listado de recetas</h1>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 4vw;">
+    <div class="row justify-content-center">
+        <div class="col-sm-6 align-self-center text-center">
+            <h3 class="title-color">Busqueda de recetas</h3>
+            <div style="margin-top: 2vw;">
+                <div class="mb-3">
+                    <label for="username" class="form-label text-color">Nombre</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                        placeholder="Nombre de la receta" [(ngModel)]="name">
+                </div>
+                <button style="margin-bottom: 3vw;" type="submit" class="btn btn-primary btn-find" (click)="buscar()">Buscar</button>
+                <div class="mb-3">
+                    <label for="userage" class="form-label text-color">Preparacion</label>
+                    <input [(ngModel)]="preparacion" type="text" class="form-control" id="userage" aria-describedby="emailHelp"
+                        placeholder="Preparacion de la receta" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="userage" class="form-label text-color">Tiempo necesario</label>
+                    <input [(ngModel)]="tiempo" type="text" class="form-control" id="userage" aria-describedby="emailHelp"
+                        placeholder="Tiempo para realizar la receta" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="usersurname" class="form-label text-color">Listado de alimentos</label>
+                    <select class="form-select form-select-lg" multiple disabled [(ngModel)]="ingredientesReceta" aria-label=".form-select-lg example">
+                        <option *ngFor="let item of foods | async" [value]="item.id">{{item.foodName}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
