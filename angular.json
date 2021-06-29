@@ -118,6 +118,10 @@
               "devServerTarget": "VedruDietFrontend:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
